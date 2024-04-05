@@ -1,0 +1,508 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+	background-color: #555;
+	color: white;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	font-size: 17px;
+	width: 25%;
+}
+
+.tablink:hover {
+	background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+	color: white;
+	display: none;
+	padding: 100px 20px;
+	height: 100%;
+}
+
+#Players {background-color: red;}
+
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Alice in Wonderland';
+  src: url(AliceinWonderland.ttf);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#notes{
+  margin: 5px;
+}
+
+.container {
+  display: flexbox;
+  padding-left: 0.5rem;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+  height: 100px;
+  width: 900px;
+}
+
+.container2 {
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+  height: 26rem;
+  width: 17.7rem;
+}
+
+#outside {
+  position: absolute;
+  width:1750px;
+  top: 50px;
+}
+
+#outside2 {
+  position: absolute;
+  place-items: center;
+  top: 150px;
+}
+
+#outside3 {
+  padding-left: 0.5rem;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+  position: absolute;
+  left: 310px;
+  top: 150px;
+}
+
+.short_input{
+  width: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+.shortish_input{
+  width: 100px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+.number{
+  width: 45px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.label{
+  font-family: 'Alice in Wonderland',sans-serif;
+  font-size: 30px;
+  text-align: left;
+}
+
+.attributes{
+  width: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+.bonus{
+  width: 50px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: #242424;
+}
+
+.collapsible{
+  width: 275px;
+  height: 50px;
+}
+
+.collapsible:after{
+  content: '\2796';
+  font-size: 10px;
+  float: inline-end;
+}
+
+.active:after {
+  content: "\02795";
+}
+
+.skill{
+  padding: 0 18px;
+  max-height: 10;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #383434;
+  width: 275px;
+}
+
+.skillbut {
+  width: 275px;
+}
+
+#money {
+  position: absolute;
+  right: 450px;
+  bottom: 505px;
+  padding-left: 15px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#inventory {
+  position: absolute;
+  left:350px;
+  bottom: 30px;
+  padding-left: 15px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#proficiencies {
+  position: absolute;
+  right: 420px;
+  top: 270px;
+  padding-left: 15px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+
+#cantripcont {
+  position: absolute;
+  left: 10px;
+  bottom: 480px;
+  height: 200px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl1spellbook{
+  position: absolute;
+  height: 205px;
+  top: 300px;
+  left: 10px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+.addspellslot {
+  height: 28px;
+  width: 28px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.rmvspellslot {
+  height: 28px;
+  width: 28px;
+  font-size: 10px;
+  text-align: center;
+}
+
+.spellslot {
+  width: 10px
+}
+
+#lvl1spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl1slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl2spellbook{
+  position: absolute;
+  height: 205px;
+  top: 535px;
+  left: 10px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl2spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl2slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl3spellbook{
+  position: absolute;
+  height: 205px;
+  bottom: 480px;
+  left: 250px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl3spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl3slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl4spellbook{
+  position: absolute;
+  height: 205px;
+  top: 300px;
+  left: 250px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl4spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl4slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl5spellbook{
+  position: absolute;
+  height: 205px;
+  top: 535px;
+  left: 250px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl5spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl5slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl6spellbook{
+  position: absolute;
+  height: 205px;
+  bottom: 480px;
+  left: 490px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl6spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl6slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl7spellbook{
+  position: absolute;
+  height: 205px;
+  top: 300px;
+  left: 490px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl7spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl7slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl8spellbook{
+  position: absolute;
+  height: 215px;
+  top: 530px;
+  left: 490px;
+  padding-left: 10px;
+  border-left: 0.25rem solid;
+  border-radius: 0.5rem;
+  border-color: #550000;
+}
+
+#lvl8spells {
+  position: relative;
+  top: 10px;
+}
+
+#lvl8slots {
+  position: absolute;
+  top: 46px;
+  left: 75px;
+}
+
+#lvl9slots {
+  position: absolute;
+  top: 135px;
+  left: 75px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  place-items: left;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #201e1e;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+#file_selector{
+  width: 200px;
+}

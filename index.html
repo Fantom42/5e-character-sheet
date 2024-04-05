@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/svg+xml" href="/public/icon.svg" />
+  <meta name="viewport" content="width=device-width">
+  <title>5e Sheet</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <button class="tablink" onclick="openPage('Stats', this, 'gray')" id="defaultOpen">Stats</button>
+    <button class="tablink" onclick="openPage('Inventory',this,'gray')">Inventory</button>
+    <button class="tablink" onclick="openPage('Spells',this,'gray')">Spells</button>
+    <button class="tablink" onclick="openPage('Settings',this,'gray')">Settings</button>
+  </div>
+	
+	
+  <div class="tabcontent" id="Stats">
+    <div id="outside">
+      <div class="container">
+        <label for="name" class="label">Name </label>
+        <input id="name" class="shortish_input">
+        <label for="race" class="label"> Race </label>
+        <input id="race" class="shortish_input">
+        <label for="class" class="label"> Class </label>
+        <input id="class" class="shortish_input">
+        <label for="mhp" class="label"> Max hp </label>
+        <input class="short_input" id="mhp" class="number" class="short_input">
+        <br>
+        <label for="pass_percep" class="label"> Passive Wis </label>
+        <input id="pass_percep" class="number" class="short_input">
+        <label for="prof_bonus" class="label">Profficiency Bonus </label>
+        <input class="short_input" id="prof_bonus" class="number" class="short_input">
+        <label for="initiative" class="label">Initiative </label>
+        <input class="short_input" id="initiative" class="number" class="short_input">
+      </div>
+   </div>
+
+   <div id="outside2">
+     <div class="container2">
+       <button class="skillbut"><h2 class="label">Skills</h2></button>
+       <button type="button" class="collapsible"><label for="str" class="label">Str</label><input class="short_input" id="str" class="attributes"><input id="str_bonus" class="short_input" class="bonus"></button>
+       <div>
+         <button class="skill"><label for="athl" class="label">Athletics</label><input id="athl" class="number" class="skill" ></button>
+       </div>
+       <button type="button" class="collapsible"><label for="int" class="label">Int</label><input class="short_input" id="int" class="attributes"><input id="int_bonus" class="short_input" class="bonus"></button>
+       <div>
+         <button class="skill"><label for="arc" class="label">Arcana</label><input id="arc" class="number" class="skill" ></button>
+         <button class="skill"><label for="his" class="label">History</label><input id="his" class="number" class="skill"></button>
+         <button class="skill"><label for="inv" class="label">Investigation</label><input id="inv" class="number" class="skill"></button>
+         <button class="skill"><label for="nat" class="label">Nature</label><input id="nat" class="number" class="skill"></button>
+         <button class="skill"><label for="reli" class="label">Religion</label><input id="reli" class="number" class="skill"></button>
+       </div>
+       <button type="button" class="collapsible"><label for="wis" class="label">Wis</label><input class="short_input" id="wis" class="attributes"><input id="wis_bonus" class="short_input" class="bonus"></button>
+       <div>
+         <button class="skill"><label for="anhan" class="label">Animal Handling</label><input id="anhan" class="number" class="skill"></button>
+         <button class="skill"><label for="ins" class="label">Insight</label><input id="ins" class="number" class="skill"></button>
+         <button class="skill"><label for="med" class="label">Medicine</label><input id="med" class="number" class="skill"></button>
+         <button class="skill"><label for="percep" class="label">Perception</label><input id="percep" class="number" class="skill"></button>
+         <button class="skill"><label for="surv" class="label">Survival</label><input id="surv" class="number" class="skill"></button>
+       </div>
+       <button type="button" class="collapsible"><label for="dex" class="label">Dex</label><input class="short_input" id="dex" class="attributes"><input id="dex_bonus" class="short_input" class="bonus"></button>
+       <div>
+         <button class="skill"><label for="acro" class="label">Acrobatics</label><input id="acro" class="number" class="skill"></button>
+         <button class="skill"><label for="stea" class="label">Stealth</label><input id="stea" class="number" class="skill"></button>
+         <button class="skill"><label for="soh" class="label">Sleight of Hand</label><input id="soh" class="number" class="skill"></button>
+       </div>
+       <button type="button" class="collapsible"><label for="cha" class="label">Cha</label><input class="short_input" id="cha" class="attributes"><input id="cha_bonus" class="short_input" class="bonus"></button>
+       <div>
+         <button class="skill"><label for="pers" class="label" class="skill">Persuation</label><input id="pers" class="number" class="skill"></button>
+         <button class="skill"><label for="dec" class="label" class="skill">Deception</label><input id="dec" class="number" class="skill"></button>
+         <button class="skill"><label for="inti" class="label" class="skill">Intimidation</label><input id="inti" class="number" class="skill"></button>
+         <button class="skill"><label for="perf" class="label" class="skill">Performance</label><input id="perf" class="number" class="skill"></button>
+       </div>
+       <button type="button" class="skillbut"><label for="con" class="label">Con</label><input class="short_input" id="con" class="attributes"><input id="con_bonus" class="short_input" class="bonus"></button>
+     </div>
+   </div>
+   <div id="outside3">
+     <h2 class="label" id="trait">TRAITS</h2>
+     <textarea rows="22" cols="37" id="traits"></textarea>
+   </div>
+  </div>
+  
+	<div class="tabcontent" id="Inventory">
+    <div id="inventory">
+      <label for="invent" class="label">Inventory</label>
+      <textarea rows="32" cols="30" id="invent"></textarea>
+    </div>
+    <div id="proficiencies">
+      <label for="prof" class="label">Proficienties</label>
+      <br>
+      <textarea rows="20" cols="25" id="prof"></textarea>
+    </div>
+    <div id="money">
+      <label for="mamon" class="label">Money</label>
+      <table id="mamon">
+        <tr>
+          <td>Platinum Pieces</td>
+          <td><input id="plat" class="short_input"></td>
+        </tr>
+        <tr>
+          <td>Gold Pieces</td>
+          <td><input id="gold" class="short_input"></td>
+        </tr>
+        <tr>
+          <td>Electrum Pieces</td>
+          <td><input id="elec" class="short_input"></td>
+        </tr>
+        <tr>
+          <td>Silver Pieces</td>
+          <td><input id="silv" class="short_input"></td>
+        </tr>
+        <tr>
+          <td>Copper pieces</td>
+          <td><input id="copp" class="short_input"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+	<div class="tabcontent" id="Spells">
+    <div id="cantripcont">
+      <label for="cantrips" class="label">Cantrips</label>
+      <br>
+      <textarea rows="5" cols="15" id="cantrips"></textarea>
+    </div>
+
+    <div id="lvl1spellbook">
+      <label for="lvl1" class="label">Level 1 Spells</label>
+      <br>
+      <button type="button" id="lvl1" class="addspellslot">+</button>
+      <button type="button" id="neglvl1" class="rmvspellslot">-</button>
+      <div id="lvl1slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl1spells"></textarea>
+    </div>
+
+    <div id="lvl2spellbook">
+      <label for="lvl2" class="label">Level 2 Spells</label>
+      <br>
+      <button type="button" id="lvl2" class="addspellslot">+</button>
+      <button type="button" id="neglvl2" class="rmvspellslot">-</button>
+      <div id="lvl2slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl2spells"></textarea>
+    </div>
+
+    <div id="lvl3spellbook">
+      <label for="lvl3" class="label">Level 3 Spells</label>
+      <br>
+      <button type="button" id="lvl3" class="addspellslot">+</button>
+      <button type="button" id="neglvl3" class="rmvspellslot">-</button>
+      <div id="lvl3slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl3spells"></textarea>
+    </div>
+
+    <div id="lvl4spellbook">
+      <label for="lvl4" class="label">Level 4 Spells</label>
+      <br>
+      <button type="button" id="lvl4" class="addspellslot">+</button>
+      <button type="button" id="neglvl4" class="rmvspellslot">-</button>
+      <div id="lvl4slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl4spells"></textarea>
+    </div>
+
+    <div id="lvl5spellbook">
+      <label for="lvl5" class="label">Level 5 Spells</label>
+      <br>
+      <button type="button" id="lvl5" class="addspellslot">+</button>
+      <button type="button" id="neglvl5" class="rmvspellslot">-</button>
+      <div id="lvl5slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl5spells"></textarea>
+    </div>
+
+    <div id="lvl6spellbook">
+      <label for="lvl6" class="label">Level 6 Spells</label>
+      <br>
+      <button type="button" id="lvl6" class="addspellslot">+</button>
+      <button type="button" id="neglvl6" class="rmvspellslot">-</button>
+      <div id="lvl6slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl6spells"></textarea>
+    </div>
+
+    <div id="lvl7spellbook">
+      <label for="lvl7" class="label">Level 7 Spells</label>
+      <br>
+      <button type="button" id="lvl7" class="addspellslot">+</button>
+      <button type="button" id="neglvl7" class="rmvspellslot">-</button>
+      <div id="lvl7slots"></div>
+      <br>
+      <textarea rows="5" cols="15" id="lvl7spells"></textarea>
+    </div>
+
+    <div id="lvl8spellbook">
+      <label for="lvl8" class="label">Level 8&9 Spells</label>
+      <br>
+      <button type="button" id="lvl8" class="addspellslot">+</button>
+      <button type="button" id="neglvl8" class="rmvspellslot">-</button>
+      <div id="lvl8slots"></div>
+      <br>
+      <textarea rows="1" cols="15" id="lvl8spells"></textarea>
+      <br>
+      <button type="button" id="lvl9" class="addspellslot">+</button>
+      <button type="button" id="neglvl9" class="rmvspellslot">-</button>
+      <div id="lvl9slots"></div>
+      <br>
+      <textarea rows="1" cols="15" id="lvl9spells"></textarea>
+    </div>
+  </div>
+  <div class="tabcontent" id="Players"></div>
+  <div class="tabcontent" id="Settings">
+    <button onclick="player_data_save()">Save</button>
+    <input type="file" accept=".json" id="file_select">
+    <button onclick="player_data_load()">Load</button>
+    
+  </div>
+
+  <script src="script/tabs.js"></script>
+  <script src="script/collapse.js"></script>
+  <script src="script/spellbook.js"></script>
+  <script src="script/save.js"></script>
+</body>
+
+</html>
