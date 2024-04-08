@@ -99,19 +99,21 @@ h1 {
   border-radius: 0.5rem;
   border-color: #550000;
   height: 26rem;
-  width: 17.7rem;
+  width: 18rem;
 }
 
 #outside {
   position: absolute;
   width:1750px;
   top: 50px;
+  left: 5px;
 }
 
 #outside2 {
   position: absolute;
   place-items: center;
-  top: 150px;
+  top: 155px;
+  left: 5px;
 }
 
 #outside3 {
@@ -125,7 +127,6 @@ h1 {
 }
 
 .short_input{
-  width: 50px;
   border-top: none;
   border-left: none;
   border-right: none;
@@ -133,7 +134,6 @@ h1 {
 }
 
 .shortish_input{
-  width: 100px;
   border-top: none;
   border-left: none;
   border-right: none;
