@@ -49,7 +49,9 @@ function player_data_save() {
         ,profficiencies: document.getElementById("prof").value  
         ,inventory: document.getElementById("invent").value 
     },{
-        cantrips: document.getElementById("cantrips").value 
+        spellsave: document.getElementById("spell_save").value 
+        ,spellattack: document.getElementById("spell_atk_bonus").value 
+        ,cantrips: document.getElementById("cantrips").value 
         ,lvl1spells: document.getElementById("lvl1spells").value 
         ,lvl2spells: document.getElementById("lvl2spells").value 
         ,lvl3spells: document.getElementById("lvl3spells").value 
@@ -125,7 +127,9 @@ function player_data_load(){
         document.getElementById("copp").value = intern[2].copp
         document.getElementById("prof").value  = intern[2].profficiencies
         document.getElementById("invent").value = intern[2].inventory
-    
+
+        document.getElementById("spell_save").value = intern[3].spellsave
+        document.getElementById("spell_atk_bonus").value = intern[3].spellattack
         document.getElementById("cantrips").value = intern[3].cantrips
         document.getElementById("lvl1spells").value = intern[3].lvl1spells
         document.getElementById("lvl2spells").value = intern[3].lvl2spells
