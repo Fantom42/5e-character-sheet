@@ -3,7 +3,7 @@ html {
   width: 100%;
 }
 body, html {
-	height: 100%;
+	overflow-y: hidden;
 	margin: 0;
 	font-family: Arial;
 }
@@ -72,7 +72,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   height: 100%;
-  overflow: hidden;
+  overflow:visible;
 }
 
 h1 {
@@ -91,7 +91,7 @@ h1 {
   border-radius: 0.5rem;
   border-color: #550000;
   height: 100px;
-  width: 900px;
+  width: 700px;
 }
 
 .container2 {
@@ -104,7 +104,7 @@ h1 {
 
 #outside {
   position: absolute;
-  width:1750px;
+  width: 700px;
   top: 50px;
   left: 5px;
 }
@@ -239,8 +239,8 @@ textarea {
 #cantripcont {
   position: absolute;
   left: 10px;
-  bottom: 480px;
-  height: 200px;
+  bottom: 25px;
+  height: 560px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -249,9 +249,9 @@ textarea {
 
 #lvl1spellbook{
   position: absolute;
-  height: 205px;
-  top: 300px;
-  left: 10px;
+  height: 560px;
+  top: 150px;
+  left: 250px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -289,9 +289,9 @@ textarea {
 
 #lvl2spellbook{
   position: absolute;
-  height: 205px;
-  top: 535px;
-  left: 10px;
+  height: 560px;
+  top: 150px;
+  left: 490px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -311,9 +311,9 @@ textarea {
 
 #lvl3spellbook{
   position: absolute;
-  height: 205px;
-  bottom: 480px;
-  left: 250px;
+  height: 560px;
+  top: 150px;
+  left: 740px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -333,9 +333,9 @@ textarea {
 
 #lvl4spellbook{
   position: absolute;
-  height: 205px;
-  top: 300px;
-  left: 250px;
+  height: 560px;
+  top: 150px;
+  left: 990px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -355,9 +355,9 @@ textarea {
 
 #lvl5spellbook{
   position: absolute;
-  height: 205px;
-  top: 535px;
-  left: 250px;
+  height: 560px;
+  top: 150px;
+  left: 1240px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -377,9 +377,9 @@ textarea {
 
 #lvl6spellbook{
   position: absolute;
-  height: 205px;
-  bottom: 480px;
-  left: 490px;
+  height: 560px;
+  top: 150px;
+  left: 1490px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -399,9 +399,9 @@ textarea {
 
 #lvl7spellbook{
   position: absolute;
-  height: 205px;
-  top: 300px;
-  left: 490px;
+  height: 560px;
+  top: 150px;
+  left: 1740px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
@@ -421,9 +421,9 @@ textarea {
 
 #lvl8spellbook{
   position: absolute;
-  height: 215px;
-  top: 530px;
-  left: 490px;
+  height: 560px;
+  top: 150px;
+  left: 1990px;
   padding-left: 10px;
   border-left: 0.25rem solid;
   border-radius: 0.5rem;
