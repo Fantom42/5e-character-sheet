@@ -87,7 +87,7 @@ function player_data_load(){
         document.getElementById("pass_percep").value = stat[0].passive_perception
         document.getElementById("prof_bonus").value = stat[0].profficiency_bonus
         document.getElementById("initiative").value = stat[0].initiative
-        document.getElementById("ac").value = stat[0].initiative
+        document.getElementById("ac").value = stat[0].ac
     
         document.getElementById("str").value = stat[1].str
         document.getElementById("str_bonus").value = stat[1].str_bonus
