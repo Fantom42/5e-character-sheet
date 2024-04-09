@@ -1,6 +1,6 @@
 {
     "name": "5e character sheet",
-    "version": "0.1.0",
+    "version": "0.1.2",
     "manifest_version": 1,
     "action": {
         "title": "5e sheet",
