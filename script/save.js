@@ -7,7 +7,7 @@ function player_data_save() {
         ,passive_perception: document.getElementById("pass_percep").value 
         ,profficiency_bonus: document.getElementById("prof_bonus").value 
         ,initiative: document.getElementById("initiative").value
-        ,ac: document.getElmentById("ac").value
+        ,ac: document.getElementById("ac").value
     },{
         str: document.getElementById("str").value 
         ,str_bonus: document.getElementById("str_bonus").value 
